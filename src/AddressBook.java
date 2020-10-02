@@ -13,18 +13,22 @@ public class AddressBook {
     }
 
     public void addBuddy(BuddyInfo buddyInfo) {
-        buddyList.add(buddyInfo);
+        if(buddyInfo != null) {
+            buddyList.add(buddyInfo);
+        }
     }
 
-    public void removeBuddy(BuddyInfo buddyInfo) {
-        buddyList.remove(buddyInfo);
+    public void removeBuddy(int index) {
+        if(index >= 0 && index < buddyList.size()) {
+            buddyList.remove(index);
+        }
     }
 
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Tom");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
-        addressBook.removeBuddy(buddy);
+        addressBook.removeBuddy(0);
     }
 
 }
