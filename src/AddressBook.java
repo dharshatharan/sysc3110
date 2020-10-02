@@ -1,7 +1,6 @@
 import java.util.LinkedList;
 
 public class AddressBook {
-
     private final LinkedList<BuddyInfo> buddyList;
 
     public AddressBook() {
