@@ -23,6 +23,8 @@ public class AddressBook {
         }
     }
 
+    public void testMethod() {}
+
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Tom");
         AddressBook addressBook = new AddressBook();
